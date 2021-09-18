@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg, #330033 0%, #0000cc 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
+}
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  display: block;
+  position: relative;
+}
+form .form-inner {
+  position: relative;
+  display: block;
+  padding: 30px;
+}
+form .form-inner h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+form .form-inner .form-group {
+  display: block;
+  width: 350px;
+  margin-bottom: 15px;
+}
+.form-inner .form-group label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+form .form-inner .form-group input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: medium;
+}
+form .form-inner input[type="submit"] {
+  display: inline-block;
+  border-radius: 50%;
+  background-size: 100%;
+  background: linear-gradient(120deg, #23f0f7 0%, #75159b 100%);
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 8vh;
+}
+.Logout {
+  display: inline-block;
+  border-radius: 4px;
+  background: linear-gradient(120deg, #23f0f7 0%, #75159b 100%);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 20px;
+  padding: 10px;
+  width: 100px;
+  margin: 5px;
+}
+
+.align-logout {
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 95%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+header,
+form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 10px;
+  font-size: x-large;
+  border: none;
+  background: white;
+  justify-content: space-around;
+}
+form button {
+  color: #1a83ff;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #1a83ff;
+  color:white;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 60%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.filter-todo {
+  padding: 14px;
+}
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #9028c0;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: rgb(11, 148, 212);
+}
+.todo-item {
+  padding: 6px 6px;
+  font-size: x-large;
+}
+
+form .form-inner .form-group input,
+input[type="submit"],
+.Logout,
+form input,
+form button,
+.trash-btn,
+.complete-btn:focus {
+  outline: none;
+}
+
+.fa-poo,
+.fa-check-circle {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/*CUSTOM SELECTOR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+/*Custom Select */
+.select {
+  margin: 18px;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #1a83ff;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 158px;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #1a83ff;
+  cursor: pointer;
+  pointer-events: none;
+}
